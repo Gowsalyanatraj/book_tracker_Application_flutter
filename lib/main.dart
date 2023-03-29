@@ -1,4 +1,6 @@
+import 'package:book_tracker/screens/get_started_page.dart';
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,33 +19,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const GetStartedPage(),
-    );
-  }
-}
-
-class GetStartedPage extends StatelessWidget {
-  const GetStartedPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      child: CircleAvatar(
-        backgroundColor: Color.fromARGB(255, 255, 220, 253),
-        child: Column(
-          children: [
-            Spacer(),
-            Text(
-              'Book Tracker',
-              style: Theme.of(context).textTheme.displaySmall,
-            ),
-            Text(
-              '"Read. Change. yourself"',
-              style: TextStyle(fontSize: 29, color: Colors.black26),
-            ),
-            Spacer()
-          ],
-        ),
-      ),
     );
   }
 }
