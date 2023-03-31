@@ -8,7 +8,7 @@ class LoginForm extends StatelessWidget {
     required GlobalKey<FormState> formKey,
     required TextEditingController emailTextController,
     required TextEditingController passwordTextController,
-  }) : _formKey = formKey, _emailTextController = emailTextController, _passwordTextController = passwordTextController;
+  }) :_formKey = formKey, _emailTextController = emailTextController, _passwordTextController = passwordTextController;
 
   final GlobalKey<FormState> _formKey;
   final TextEditingController _emailTextController;
@@ -20,7 +20,7 @@ class LoginForm extends StatelessWidget {
         key: _formKey,
         child: Column(
           children: [
-            Padding(
+            Padding(  
               padding: const EdgeInsets.all(15.0),
               child: TextFormField(
                 controller: _emailTextController,
