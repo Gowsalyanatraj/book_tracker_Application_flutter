@@ -48,10 +48,10 @@ class CreateAccount extends StatelessWidget {
                   padding: EdgeInsets.all(15),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4)),
-                  backgroundColor: Colors.amber,
+                  backgroundColor: Colors.white,
                   textStyle: TextStyle(fontSize: 18)),
               onPressed: () {},
-              child: Text('Create Account'))
+              child: Text('Create your Account'))
         ],
       ),
     );

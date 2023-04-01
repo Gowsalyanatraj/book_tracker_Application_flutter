@@ -14,7 +14,7 @@ class GetStartedPage extends StatelessWidget {
           children: [
             Spacer(),
             Text(
-              'Book Tracker',
+              '📑Book Tracker📑',
               style: Theme.of(context).textTheme.displaySmall,
             ),
             SizedBox(height: 15.0),
