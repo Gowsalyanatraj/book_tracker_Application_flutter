@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
               Expanded(
                   flex: 2,
                   child: Container(
-                    color: Colors.amber,
+                    color: HexColor('C2EDFF'),
                   )),
               Text('Sign In', style: Theme.of(context).textTheme.headlineSmall),
               SizedBox(height: 10),
