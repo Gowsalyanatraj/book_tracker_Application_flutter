@@ -31,7 +31,8 @@ class _LoginPageState extends State<LoginPage> {
                   child: Container(
                     color: HexColor('C2EDFF'),
                   )),
-              Text('Sign In', style: Theme.of(context).textTheme.headlineSmall),
+              Text(isCreateAccountClicked != true ? 'Sign In' : 'Sign Up',
+                  style: Theme.of(context).textTheme.headlineSmall),
               SizedBox(height: 10),
               Container(
                 child: Column(
