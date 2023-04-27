@@ -1,5 +1,5 @@
-import 'package:book_tracker/screens/LoginPage/create_account.dart';
-import 'package:book_tracker/screens/LoginPage/login_form.dart';
+import 'package:book_tracker/widgets/create_account.dart';
+import 'package:book_tracker/widgets/login_form.dart';
 import 'package:book_tracker/widgets/input_decoration.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
