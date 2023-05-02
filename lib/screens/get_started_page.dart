@@ -12,35 +12,35 @@ class GetStartedPage extends StatelessWidget {
         backgroundColor: HexColor('EAFFFF'),
         child: Column(
           children: [
-            Spacer(),
+           const Spacer(),
             Text(
               '📑Book Tracker📑',
               style: Theme.of(context).textTheme.displaySmall,
             ),
-            SizedBox(height: 15.0),
-            Text(
+            const SizedBox(height: 15.0),
+            const Text(
               '"Read. Change. yourself"',
               style: TextStyle(
                   fontSize: 29,
                   fontWeight: FontWeight.bold,
                   color: Colors.black26),
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             TextButton.icon(
                 style: TextButton.styleFrom(
                     primary: Colors.white,
                     backgroundColor: HexColor('01DDDD'),
-                    textStyle: TextStyle(fontSize: 18.1)),
+                    textStyle:const TextStyle(fontSize: 18.1)),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LoginPage()));
                 },
-                icon: Icon(Icons.login_rounded),
-                label: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                icon: const Icon(Icons.login_rounded),
+                label:const Padding(
+                  padding:  EdgeInsets.all(8.0),
                   child: Text('Sign in to get started'),
                 )),
-            Spacer()
+           const Spacer()
           ],
         ),
       ),

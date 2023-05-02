@@ -33,8 +33,8 @@ class _LoginPageState extends State<LoginPage> {
                   )),
               Text(isCreateAccountClicked != true ? 'Sign In' : 'Sign Up',
                   style: Theme.of(context).textTheme.headlineSmall),
-              SizedBox(height: 10),
-              Container(
+             const SizedBox(height: 10),
+            Container(
                 child: Column(
                   children: [
                     SizedBox(
@@ -51,10 +51,10 @@ class _LoginPageState extends State<LoginPage> {
                                 passwordTextController:
                                     _passwordTextController)),
                     TextButton.icon(
-                        icon: Icon(Icons.portrait_rounded),
+                        icon: const Icon(Icons.portrait_rounded),
                         style: TextButton.styleFrom(
                             primary: HexColor('#fd5b23'),
-                            textStyle: TextStyle(
+                            textStyle:const TextStyle(
                                 fontSize: 18, fontStyle: FontStyle.italic)),
                         onPressed: () {
                           setState(() {

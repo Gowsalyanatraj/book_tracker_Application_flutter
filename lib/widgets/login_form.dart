@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'input_decoration.dart';
+import 'package:book_tracker/path/router.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -45,19 +46,21 @@ class LoginForm extends StatelessWidget {
                   inputFieldDecoration(label: 'Enter password', hintText: ''),
             ),
           ),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           TextButton(
               style: TextButton.styleFrom(
                   primary: Colors.white,
-                  padding: EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4)),
                   backgroundColor: Colors.amber,
-                  textStyle: TextStyle(fontSize: 18)),
+                  textStyle: const TextStyle(fontSize: 18)),
               onPressed: () {
-                if (_formKey.currentState!.validate()) {}
+                if (_formKey.currentState!.validate()) {
+                  print(path);
+                }
               },
-              child: Text('Sign in'))
+              child: const Text('Sign in'))
         ],
       ),
     );

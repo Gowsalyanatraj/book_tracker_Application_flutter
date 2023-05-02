@@ -24,7 +24,7 @@ class CreateAccount extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          Text(
+         const Text(
               'Please enter a valid email and password that is at least 6 characters'),
           Padding(
             padding: const EdgeInsets.all(15.0),
@@ -49,7 +49,7 @@ class CreateAccount extends StatelessWidget {
                   inputFieldDecoration(label: 'Enter password', hintText: ''),
             ),
           ),
-          SizedBox(height: 20.0),
+         const SizedBox(height: 20.0),
           TextButton(
               style: TextButton.styleFrom(
                   primary: Colors.white,
@@ -57,11 +57,11 @@ class CreateAccount extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4)),
                   backgroundColor: Colors.amber,
-                  textStyle: TextStyle(fontSize: 18)),
+                  textStyle:const TextStyle(fontSize: 18)),
               onPressed: () {
                 if (_formKey.currentState!.validate()) {}
               },
-              child: Text('Create Account'))
+              child: const Text('Create Account'))
         ],
       ),
     );
