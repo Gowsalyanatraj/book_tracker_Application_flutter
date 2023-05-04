@@ -23,23 +23,15 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="book_tracker">
+  <meta name="apple-mobile-web-app-title" content="web">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>book_tracker</title>
+  <title>web</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-<body>
   <script>
     // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -50,18 +42,26 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDPTUnqeFmL3dA9o7fpdyGo8GbouQ7xYrw",
-  authDomain: "book-tracker-f67d3.firebaseapp.com",
-  projectId: "book-tracker-f67d3",
-  storageBucket: "book-tracker-f67d3.appspot.com",
-  messagingSenderId: "996976797676",
-  appId: "1:996976797676:web:8147287cef82e7541602c9",
-  measurementId: "G-5N78TZDK6L"
+  apiKey: "AIzaSyD_fvLlR_bpE-6NLoQaOvP6SES9Ed4kATY",
+  authDomain: "booktrackerapp-2dfe5.firebaseapp.com",
+  projectId: "booktrackerapp-2dfe5",
+  storageBucket: "booktrackerapp-2dfe5.appspot.com",
+  messagingSenderId: "783061050441",
+  appId: "1:783061050441:web:fda73e29996a7f8e568b98",
+  measurementId: "G-PMM37WE25Q"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
@@ -76,6 +76,5 @@ const analytics = getAnalytics(app);
       });
     });
   </script>
-  
 </body>
 </html>
